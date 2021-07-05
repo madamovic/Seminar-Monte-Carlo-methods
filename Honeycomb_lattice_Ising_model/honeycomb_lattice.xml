@@ -1,0 +1,37 @@
+<LATTICES>
+  <LATTICEGRAPH name="honeycomb lattice">
+    <FINITELATTICE>
+      <LATTICE dimension="2" name="triangular lattice">
+        <BASIS>
+          <VECTOR>1.0 0.0</VECTOR>
+          <VECTOR>0.5 0.8660254037844386</VECTOR>
+        </BASIS>
+      </LATTICE>
+      <PARAMETER name="L" />
+      <PARAMETER default="L" name="W" />
+      <EXTENT dimension="1" size="L" />
+      <EXTENT dimension="2" size="W" />
+      <BOUNDARY type="periodic" />
+    </FINITELATTICE>
+    <UNITCELL dimension="2" edges="3" name="honeycomb" vertices="2">
+      <VERTEX id="1" type="0">
+        <COORDINATE>0.0 0.0</COORDINATE>
+      </VERTEX>
+      <VERTEX id="2" type="0">
+        <COORDINATE>-0.288665771484375 0.5773468017578125</COORDINATE>
+      </VERTEX>
+      <EDGE id="1" type="0">
+        <SOURCE vertex="1" />
+        <TARGET offset="0 0 0" vertex="2" />
+      </EDGE>
+      <EDGE id="2" type="1">
+        <SOURCE vertex="2" />
+        <TARGET offset="0 1 0" vertex="1" />
+      </EDGE>
+      <EDGE id="3" type="2">
+        <SOURCE vertex="1" />
+        <TARGET offset="1 -1 0" vertex="2" />
+      </EDGE>
+    </UNITCELL>
+  </LATTICEGRAPH>
+</LATTICES>
