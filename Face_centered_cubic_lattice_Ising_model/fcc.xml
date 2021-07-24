@@ -1,0 +1,130 @@
+<LATTICES>
+  <LATTICEGRAPH name="fcc">
+    <FINITELATTICE>
+      <LATTICE dimension="3" name="myLattice">
+        <BASIS>
+          <VECTOR>1.0 0.0 0.0</VECTOR>
+          <VECTOR>0.0 1.0 0.0</VECTOR>
+          <VECTOR>0.0 0.0 1.0</VECTOR>
+        </BASIS>
+      </LATTICE>
+      <PARAMETER name="L" />
+      <PARAMETER default="L" name="W" />
+      <PARAMETER default="W" name="H" />
+      <EXTENT dimension="1" size="L" />
+      <EXTENT dimension="2" size="W" />
+      <EXTENT dimension="3" size="H" />
+      <BOUNDARY type="periodic" />
+    </FINITELATTICE>
+    <UNITCELL dimension="3" edges="24" name="myUC" vertices="4">
+      <VERTEX id="1" type="0">
+        <COORDINATE>0.0 0.0 0.0</COORDINATE>
+      </VERTEX>
+      <VERTEX id="2" type="0">
+        <COORDINATE>0.5 0.5 0.0</COORDINATE>
+      </VERTEX>
+      <VERTEX id="3" type="0">
+        <COORDINATE>0.0 0.5 0.5</COORDINATE>
+      </VERTEX>
+      <VERTEX id="4" type="0">
+        <COORDINATE>0.5 0.0 0.5</COORDINATE>
+      </VERTEX>
+      <EDGE id="1" type="0">
+        <SOURCE vertex="1" />
+        <TARGET offset="0 0 0" vertex="2" />
+      </EDGE>
+      <EDGE id="2" type="0">
+        <SOURCE vertex="1" />
+        <TARGET offset="0 0 0" vertex="3" />
+      </EDGE>
+      <EDGE id="3" type="0">
+        <SOURCE vertex="2" />
+        <TARGET offset="0 0 0" vertex="3" />
+      </EDGE>
+      <EDGE id="4" type="0">
+        <SOURCE vertex="1" />
+        <TARGET offset="0 0 0" vertex="4" />
+      </EDGE>
+      <EDGE id="5" type="0">
+        <SOURCE vertex="2" />
+        <TARGET offset="0 0 0" vertex="4" />
+      </EDGE>
+      <EDGE id="6" type="0">
+        <SOURCE vertex="3" />
+        <TARGET offset="0 0 0" vertex="4" />
+      </EDGE>
+      <EDGE id="7" type="0">
+        <SOURCE vertex="2" />
+        <TARGET offset="1 0 0" vertex="1" />
+      </EDGE>
+      <EDGE id="8" type="0">
+        <SOURCE vertex="4" />
+        <TARGET offset="1 0 0" vertex="1" />
+      </EDGE>
+      <EDGE id="9" type="0">
+        <SOURCE vertex="2" />
+        <TARGET offset="1 0 0" vertex="3" />
+      </EDGE>
+      <EDGE id="10" type="0">
+        <SOURCE vertex="4" />
+        <TARGET offset="1 0 0" vertex="3" />
+      </EDGE>
+      <EDGE id="11" type="0">
+        <SOURCE vertex="2" />
+        <TARGET offset="0 1 0" vertex="1" />
+      </EDGE>
+      <EDGE id="12" type="0">
+        <SOURCE vertex="3" />
+        <TARGET offset="0 1 0" vertex="1" />
+      </EDGE>
+      <EDGE id="13" type="0">
+        <SOURCE vertex="2" />
+        <TARGET offset="0 1 0" vertex="4" />
+      </EDGE>
+      <EDGE id="14" type="0">
+        <SOURCE vertex="3" />
+        <TARGET offset="0 1 0" vertex="4" />
+      </EDGE>
+      <EDGE id="15" type="0">
+        <SOURCE vertex="3" />
+        <TARGET offset="0 0 1" vertex="1" />
+      </EDGE>
+      <EDGE id="16" type="0">
+        <SOURCE vertex="4" />
+        <TARGET offset="0 0 1" vertex="1" />
+      </EDGE>
+      <EDGE id="17" type="0">
+        <SOURCE vertex="3" />
+        <TARGET offset="0 0 1" vertex="2" />
+      </EDGE>
+      <EDGE id="18" type="0">
+        <SOURCE vertex="4" />
+        <TARGET offset="0 0 1" vertex="2" />
+      </EDGE>
+      <EDGE id="19" type="0">
+        <SOURCE vertex="2" />
+        <TARGET offset="1 1 0" vertex="1" />
+      </EDGE>
+      <EDGE id="20" type="0">
+        <SOURCE vertex="4" />
+        <TARGET offset="1 0 1" vertex="1" />
+      </EDGE>
+      <EDGE id="21" type="0">
+        <SOURCE vertex="3" />
+        <TARGET offset="0 1 1" vertex="1" />
+      </EDGE>
+      <EDGE id="22" type="0">
+        <SOURCE vertex="4" />
+        <TARGET offset="1 -1 0" vertex="3" />
+      </EDGE>
+      <EDGE id="23" type="0">
+        <SOURCE vertex="2" />
+        <TARGET offset="1 0 -1" vertex="3" />
+      </EDGE>
+      <EDGE id="24" type="0">
+        <SOURCE vertex="2" />
+        <TARGET offset="0 1 -1" vertex="4" />
+      </EDGE>
+    </UNITCELL>
+  </LATTICEGRAPH>
+</LATTICES>
