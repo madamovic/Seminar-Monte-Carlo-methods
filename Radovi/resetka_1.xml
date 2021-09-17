@@ -1,0 +1,38 @@
+<LATTICES>
+  <LATTICEGRAPH name="resetka_1">
+    <FINITELATTICE>
+      <LATTICE dimension="2" name="square lattice">
+        <BASIS>
+          <VECTOR>1.0 0.0</VECTOR>
+          <VECTOR>0.0 1.0</VECTOR>
+        </BASIS>
+      </LATTICE>
+      <PARAMETER name="L" />
+      <PARAMETER default="L" name="W" />
+      <EXTENT dimension="1" size="L" />
+      <EXTENT dimension="2" size="W" />
+      <BOUNDARY type="periodic" />
+    </FINITELATTICE>
+    <UNITCELL dimension="2" edges="4" name="simple2d" vertices="1">
+      <VERTEX id="1" type="0">
+        <COORDINATE>0.0 0.0</COORDINATE>
+      </VERTEX>
+      <EDGE id="1" type="0">
+        <SOURCE vertex="1" />
+        <TARGET offset="0 1 0" vertex="1" />
+      </EDGE>
+      <EDGE id="2" type="0">
+        <SOURCE vertex="1" />
+        <TARGET offset="1 0 0" vertex="1" />
+      </EDGE>
+      <EDGE id="3" type="1">
+        <SOURCE vertex="1" />
+        <TARGET offset="1 1 0" vertex="1" />
+      </EDGE>
+      <EDGE id="4" type="1">
+        <SOURCE vertex="1" />
+        <TARGET offset="1 -1 0" vertex="1" />
+      </EDGE>
+    </UNITCELL>
+  </LATTICEGRAPH>
+</LATTICES>

@@ -1,0 +1,45 @@
+<LATTICES>
+  <LATTICEGRAPH name="resetka_2">
+    <FINITELATTICE>
+      <LATTICE dimension="3" name="myLattice">
+        <BASIS>
+          <VECTOR>1.0 0.0 0.0</VECTOR>
+          <VECTOR>0.0 1.0 0.0</VECTOR>
+          <VECTOR>0.0 0.0 1.0</VECTOR>
+        </BASIS>
+      </LATTICE>
+      <PARAMETER name="L" />
+      <PARAMETER default="L" name="W" />
+      <PARAMETER default="W" name="H" />
+      <EXTENT dimension="1" size="L" />
+      <EXTENT dimension="2" size="W" />
+      <EXTENT dimension="3" size="H" />
+      <BOUNDARY type="periodic" />
+    </FINITELATTICE>
+    <UNITCELL dimension="3" edges="5" name="myUC" vertices="1">
+      <VERTEX id="1" type="0">
+        <COORDINATE>0.0 0.0 0.0</COORDINATE>
+      </VERTEX>
+      <EDGE id="1" type="0">
+        <SOURCE vertex="1" />
+        <TARGET offset="1 0 0" vertex="1" />
+      </EDGE>
+      <EDGE id="2" type="0">
+        <SOURCE vertex="1" />
+        <TARGET offset="0 1 0" vertex="1" />
+      </EDGE>
+      <EDGE id="3" type="2">
+        <SOURCE vertex="1" />
+        <TARGET offset="0 0 1" vertex="1" />
+      </EDGE>
+      <EDGE id="4" type="1">
+        <SOURCE vertex="1" />
+        <TARGET offset="1 1 0" vertex="1" />
+      </EDGE>
+      <EDGE id="5" type="1">
+        <SOURCE vertex="1" />
+        <TARGET offset="1 -1 0" vertex="1" />
+      </EDGE>
+    </UNITCELL>
+  </LATTICEGRAPH>
+</LATTICES>
