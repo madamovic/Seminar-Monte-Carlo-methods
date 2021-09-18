@@ -1,0 +1,34 @@
+# -------------------------------------------
+# Fictious chain of Cr atoms
+#
+AX  = 15.00
+AY  = 15.00
+AZ  = 6.00
+ALFA= 90.0
+BETA= 90.0
+GAMA= 90.0
+#
+# -------------------------------------------
+# Position of the Cr spin (S=3/2), no anisotropy
+#
+I= 1, NOM=S3D2, X= 0.00  ,Y= 0.00  ,Z=0.00 , PHI= 0, THETA= 90
+I= 2, NOM=S3D2, X= 0.00  ,Y= 0.00  ,Z=0.50 , PHI=180,THETA= 90
+#
+# -------------------------------------------
+# First-neighbour antiferromagnetic coupling
+#
+I1= 1,I2= 2,J1=3.14,D1= 3.5
+#
+# -------------------------------------------
+# Scan definition
+#
+FFORM
+#
+SIG=0.3
+#
+Q0X=0.0,Q0Y=0.0,Q0Z=0.0
+DQX=0.00,DQY=0.00,DQZ=0.005
+NP=400
+FICH=res-antiferrochain.txt
+WMAX=15,NW=150
+#
